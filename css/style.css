@@ -1,0 +1,692 @@
+/* =========================
+   General Styles
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fb;
+    color: #222;
+}
+
+
+/* =========================
+   Header
+========================= */
+
+header {
+    background-color: #111827;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 8%;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #60a5fa;
+}
+
+
+/* =========================
+   Login Container
+========================= */
+
+.login-container {
+    min-height: calc(100vh - 145px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px 20px;
+}
+
+
+/* =========================
+   Hero Section
+========================= */
+
+.hero {
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #6366f1
+    );
+
+    color: white;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero-content h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   Primary Button
+========================= */
+
+.primary-btn {
+    padding: 14px 28px;
+    background-color: white;
+    color: #2563eb;
+
+    border: none;
+    border-radius: 7px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.primary-btn:hover {
+    background-color: #e5e7eb;
+}
+
+
+/* =========================
+   Blog Section
+========================= */
+
+.blogs {
+    padding: 60px 8%;
+}
+
+.blogs > h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+
+/* =========================
+   Blog Card
+========================= */
+
+.blog-card {
+    background-color: white;
+
+    border-radius: 12px;
+
+    padding: 30px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.blog-content h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.blog-content p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.read-more {
+    color: #2563eb;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   Login Box
+========================= */
+
+.login-box {
+    width: 100%;
+    max-width: 450px;
+
+    background-color: white;
+
+    padding: 40px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.login-box h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.login-subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   Form
+========================= */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 7px;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: #2563eb;
+}
+
+
+/* =========================
+   Login Options
+========================= */
+
+.login-options {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+
+    font-size: 14px;
+}
+
+.login-options label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.login-options a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+
+/* =========================
+   Login Button
+========================= */
+
+.login-btn {
+    width: 100%;
+
+    padding: 13px;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 7px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* =========================
+   Register Text
+========================= */
+
+.register-text {
+    text-align: center;
+
+    margin-top: 25px;
+
+    color: #666;
+}
+
+.register-text a {
+    color: #2563eb;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   Footer
+========================= */
+
+footer {
+    background-color: #111827;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+
+/* =========================
+   Responsive Design
+========================= */
+
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    .login-box {
+        padding: 25px;
+    }
+
+    .login-box h2 {
+        font-size: 25px;
+    }
+
+    .login-options {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
+
+
+/* =========================
+   Dashboard
+========================= */
+
+.dashboard {
+    min-height: calc(100vh - 145px);
+    padding: 50px 8%;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.dashboard-header h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.dashboard-header p {
+    color: #666;
+}
+
+
+/* Create Blog Button */
+
+.primary-btn {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    padding: 13px 22px;
+    border-radius: 7px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.primary-btn:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* Statistics */
+
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-bottom: 45px;
+}
+
+.stat-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.stat-card h3 {
+    font-size: 30px;
+    color: #2563eb;
+    margin-bottom: 8px;
+}
+
+.stat-card p {
+    color: #666;
+}
+
+
+/* My Blogs */
+
+.my-blogs h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.blog-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.blog-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.blog-content {
+    padding: 25px;
+}
+
+.blog-content h3 {
+    font-size: 21px;
+    margin: 12px 0;
+}
+
+.blog-content p {
+    color: #666;
+    line-height: 1.6;
+}
+
+
+/* Blog Status */
+
+.blog-status {
+    display: inline-block;
+    background-color: #dcfce7;
+    color: #15803d;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.blog-status.draft {
+    background-color: #fef3c7;
+    color: #b45309;
+}
+
+
+/* Blog Actions */
+
+.blog-actions {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.read-more,
+.edit-link {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.edit-link {
+    color: #555;
+}
+
+
+/* Dashboard Responsive */
+
+@media (max-width: 700px) {
+
+    .dashboard {
+        padding: 35px 20px;
+    }
+
+    .dashboard-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .dashboard-header h2 {
+        font-size: 26px;
+    }
+
+    .stats-container {
+        grid-template-columns: 1fr;
+    }
+
+    .blog-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* =========================
+   Create Blog
+========================= */
+
+.create-blog {
+    min-height: calc(100vh - 145px);
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.create-blog-box {
+    width: 100%;
+    max-width: 800px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.create-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.create-header h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.create-header p {
+    color: #666;
+}
+
+
+/* Select */
+
+.form-group select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+    font-size: 15px;
+    background-color: white;
+    outline: none;
+}
+
+.form-group select:focus {
+    border-color: #2563eb;
+}
+
+
+/* Textarea */
+
+.form-group textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    resize: vertical;
+    outline: none;
+}
+
+.form-group textarea:focus {
+    border-color: #2563eb;
+}
+
+
+/* File Input */
+
+.form-group input[type="file"] {
+    background-color: #f9fafb;
+}
+
+
+/* Create Buttons */
+
+.create-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+
+.draft-btn,
+.publish-btn {
+    padding: 13px 25px;
+    border-radius: 7px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.draft-btn {
+    background-color: white;
+    color: #2563eb;
+    border: 1px solid #2563eb;
+}
+
+.draft-btn:hover {
+    background-color: #eff6ff;
+}
+
+.publish-btn {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+}
+
+.publish-btn:hover {
+    background-color: #1d4ed8;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .create-blog-box {
+        padding: 25px;
+    }
+
+    .create-header h2 {
+        font-size: 26px;
+    }
+
+    .create-actions {
+        flex-direction: column;
+    }
+
+    .draft-btn,
+    .publish-btn {
+        width: 100%;
+    }
+
+}

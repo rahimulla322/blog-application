@@ -6,64 +6,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>BlogSpace - Home</title>
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>BlogSpace</h1>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+
+        <div class="logo">
+            <h1>BlogSpace</h1>
+        </div>
 
         <nav>
-            <a href="index.html">Home</a>
+            <a href="index.html" class="active">Home</a>
             <a href="login.html">Login</a>
             <a href="register.html">Register</a>
         </nav>
+
     </header>
 
+
+    <!-- Main Content -->
     <main>
 
-        <section>
-            <h2>Welcome to BlogSpace</h2>
+        <!-- Hero Section -->
+        <section class="hero">
 
-            <p>
-                Discover stories, ideas and experiences
-                from different writers.
-            </p>
+            <div class="hero-content">
 
-            <button>Explore Blogs</button>
+                <h2>Welcome to BlogSpace</h2>
+
+                <p>
+                    Discover stories, ideas and experiences
+                    from different writers.
+                </p>
+
+                <button class="primary-btn">
+                    Explore Blogs
+                </button>
+
+            </div>
+
         </section>
 
-        <section>
+
+        <!-- Latest Blogs -->
+        <section class="blogs">
+
             <h2>Latest Blogs</h2>
 
-            <article>
-                <h3>My First Blog</h3>
+            <div class="blog-container">
 
-                <p>
-                    This is my first blog post.
-                    Welcome to my blog application.
-                </p>
+                <!-- Blog 1 -->
+                <article class="blog-card">
 
-                <a href="#">Read More</a>
-            </article>
+                    <div class="blog-content">
 
-            <article>
-                <h3>Technology and the Future</h3>
+                        <h3>My First Blog</h3>
 
-                <p>
-                    Technology is changing the way
-                    we learn, work and communicate.
-                </p>
+                        <p>
+                            This is my first blog post.
+                            Welcome to my blog application.
+                        </p>
 
-                <a href="#">Read More</a>
-            </article>
+                        <a href="#" class="read-more">
+                            Read More →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Blog 2 -->
+                <article class="blog-card">
+
+                    <div class="blog-content">
+
+                        <h3>Technology and the Future</h3>
+
+                        <p>
+                            Technology is changing the way
+                            we learn, work and communicate.
+                        </p>
+
+                        <a href="#" class="read-more">
+                            Read More →
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
 
         </section>
 
     </main>
 
-    <footer>
-        <p>© 2026 BlogSpace. All rights reserved.</p>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <p>
+            © 2026 BlogSpace. All rights reserved.
+        </p>
+
     </footer>
 
 </body>

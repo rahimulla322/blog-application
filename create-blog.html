@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Blog - BlogSpace</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>BlogSpace</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="create-blog.html">Create Blog</a>
+        <a href="login.html">Logout</a>
+    </nav>
+</header>
+
+<main class="create-blog-container">
+
+    <div class="create-blog-box">
+
+        <h2>Create a New Blog</h2>
+
+        <p class="create-subtitle">
+            Share your thoughts and ideas with the world.
+        </p>
+
+        <form>
+
+            <div class="form-group">
+                <label for="title">Blog Title</label>
+                <input
+                    type="text"
+                    id="title"
+                    placeholder="Enter your blog title"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="category">Category</label>
+                <input
+                    type="text"
+                    id="category"
+                    placeholder="e.g. Technology, Travel, Education"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="content">Blog Content</label>
+                <textarea
+                    id="content"
+                    rows="10"
+                    placeholder="Write your blog here..."
+                    required
+                ></textarea>
+            </div>
+
+            <button type="submit" class="login-btn">
+                Publish Blog
+            </button>
+
+        </form>
+
+    </div>
+
+</main>
+
+<footer>
+    <p>© 2026 BlogSpace. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
