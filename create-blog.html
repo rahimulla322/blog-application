@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Create Blog - BlogSpace</title>
 
     <link rel="stylesheet" href="css/style.css">
@@ -30,43 +31,48 @@
         <p class="create-subtitle">
             Share your thoughts and ideas with the world.
         </p>
+<form id="blogForm">
 
-        <form>
+    <div class="form-group">
+        <label for="title">Blog Title</label>
 
-            <div class="form-group">
-                <label for="title">Blog Title</label>
-                <input
-                    type="text"
-                    id="title"
-                    placeholder="Enter your blog title"
-                    required
-                >
-            </div>
+        <input
+            type="text"
+            id="title"
+            placeholder="Enter your blog title"
+            required
+        >
+    </div>
 
-            <div class="form-group">
-                <label for="category">Category</label>
-                <input
-                    type="text"
-                    id="category"
-                    placeholder="e.g. Technology, Travel, Education"
-                >
-            </div>
 
-            <div class="form-group">
-                <label for="content">Blog Content</label>
-                <textarea
-                    id="content"
-                    rows="10"
-                    placeholder="Write your blog here..."
-                    required
-                ></textarea>
-            </div>
+    <div class="form-group">
+        <label for="category">Category</label>
 
-            <button type="submit" class="login-btn">
-                Publish Blog
-            </button>
+        <input
+            type="text"
+            id="category"
+            placeholder="e.g. Technology, Travel, Education"
+        >
+    </div>
 
-        </form>
+
+    <div class="form-group">
+        <label for="content">Blog Content</label>
+
+        <textarea
+            id="content"
+            rows="10"
+            placeholder="Write your blog here..."
+            required
+        ></textarea>
+    </div>
+
+
+    <button type="submit" class="login-btn" id="submitButton">
+        Publish Blog
+    </button>
+
+</form>
 
     </div>
 
@@ -75,6 +81,9 @@
 <footer>
     <p>© 2026 BlogSpace. All rights reserved.</p>
 </footer>
+
+<!-- JavaScript -->
+<script src="js/script.js"></script>
 
 </body>
 </html>
